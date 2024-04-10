@@ -33,11 +33,11 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isSum50);
-console.log(isTwoOdd);
-console.log(isOver25);
-console.log(isUnique);
-console.log(isValid);
+// console.log(isSum50);
+// console.log(isTwoOdd);
+// console.log(isOver25);
+// console.log(isUnique);
+// console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -47,3 +47,29 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+  //checking is divisible by 5
+  const isDivisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0 ;
+
+  console.log('Meets the divisibility criteria:${isDivisibleBy5}');
+
+// check if first first number is larger than last
+  const fnIsLarLast = (n1>n4);
+  console.log('first number is greater than 4th number:${fnIsLarLast}');
+
+  //Subtract the first number from the second number.
+  const subSecFromFirst =(n1-n2);
+  console.log(subSecFromFirst);
+
+  //Multiply the result by the third number
+
+  const mulByThird = (subSecFromFirst * n3);
+  console.log(mulByThird);
+
+  //Find the remainder of dividing the result by the fourth number.
+
+  const rem =(mulByThird % n4);
+  console.log(rem);
+
+  const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+  console.log(isUnder25);
