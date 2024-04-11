@@ -118,8 +118,11 @@ console.log (time3);
 
 const compBud1 = bud1< bud2 && bud1 < bud3 ;
 console.log(`budget efficiency : ${compBud1}`);
-const compBud2 =  bud2 > bud3  && bud2 > bud3;
-console.log(`budget efficiency : ${compBud1}`);
+const compBud2 =  bud2 > bud1 && bud2 > bud3;
+console.log(`budget efficiency : ${compBud2}`);
+
+
+
 
 
 
