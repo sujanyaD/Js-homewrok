@@ -51,7 +51,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   //checking is divisible by 5
   const isDivBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0 ;
 
-  console.log('Meets the divisibility criteria:${isDivBy5}');
+  console.log(`Meets the divisibility criteria:${isDivBy5}`);
 
 // check if first first number is larger than last
   const fnIsLarLast = (n1>n4);
