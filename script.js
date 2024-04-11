@@ -49,9 +49,9 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
   //checking is divisible by 5
-  const isDivisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0 ;
+  const isDivBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0 ;
 
-  console.log('Meets the divisibility criteria:${isDivisibleBy5}');
+  console.log('Meets the divisibility criteria:${isDivBy5}');
 
 // check if first first number is larger than last
   const fnIsLarLast = (n1>n4);
@@ -71,5 +71,72 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   const rem =(mulByThird % n4);
   console.log(rem);
 
-  const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+// checked If any of the number is less than 25. 
+  const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25; 
   console.log(isUnder25);
+
+  //practical math scenario 
+  
+
+  const totDist = 1500;
+ const m1=55;
+  const m2= 60;
+  const m3= 75;
+  const g1= 30;
+  const g2= 28;
+  const g3= 23;
+  
+
+  //Toatl Gallons for entire trip 
+  let galComp1 = (totDist / g1);
+  const galComp2 = (totDist / g2);
+  const galComp3 = (totDist / g3);
+  console.log (galComp1 , galComp2 , galComp3);
+
+  //budget to cover fuel expenses
+
+const c1 = 3;
+const bud1 = ( galComp1 * c1);
+console.log('comparinf{bud1}');
+
+const bud2 = (galComp2 * c1);
+ console.log(bud2);
+
+ const bud3 = (galComp3 * c1);
+ console.log(bud3);
+
+ //Time Duration for Trip
+
+ const time1 = (totDist / m1);
+ const time2 = (totDist /m2);
+ const time3 = (totDist /m3);
+console.log (time1 );
+console.log (time2 );
+console.log (time3);
+
+// comparing results with average results of 3 distances 
+
+const compBud1 = bud1< bud2 && bud1 < bud3 ;
+console.log(`budget efficiency : ${compBud1}`);
+const compBud2 =  bud2 > bud3  && bud2 > bud3;
+console.log(`budget efficiency : ${compBud1}`);
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+ 
