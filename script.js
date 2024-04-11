@@ -55,7 +55,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 // check if first first number is larger than last
   const fnIsLarLast = (n1>n4);
-  console.log('first number is greater than 4th number:${fnIsLarLast}');
+  console.log(`first number is greater than 4th number:${fnIsLarLast}`);
 
   //Subtract the first number from the second number.
   const subSecFromFirst =(n1-n2);
